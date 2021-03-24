@@ -8,7 +8,7 @@ export ZSH="/home/ichbinram/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,13 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # Use powerline
 USE_POWERLINE="true"
 # Source manjaro-zsh-configuration
-if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
-  source /usr/share/zsh/manjaro-zsh-config
-fi
+#if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
+#  source /usr/share/zsh/manjaro-zsh-config
+#fi
 # Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
+#if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#  source /usr/share/zsh/manjaro-zsh-prompt
+#fi
 
 
 
@@ -128,21 +128,21 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # alias
-alias commit='git add -A; git commit -m'
-alias v='nvim'
-alias sv='sudo nvim'
-alias pac='sudo pacman'
-alias c='clear'
-alias thesis='cd ~/Documents/IFN/; conda activate thesis'
-alias r='source ~/.zshrc && clear'
+alias commit="git add -A; git commit -m"
+alias v="nvim"
+alias sv="sudo nvim"
+alias pac="sudo pacman"
+alias c="clear"
+alias thesis="cd ~/Documents/IFN/; conda activate thesis"
+alias r="source ~/.zshrc && clear"
 
 # Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias ls="exa -al --color=always --group-directories-first" # my preferred listing
+alias la="exa -a --color=always --group-directories-first"  # all files and dirs
+alias ll="exa -l --color=always --group-directories-first"  # long format
+alias lt="exa -aT --color=always --group-directories-first" # tree listing
 alias l.='exa -a | egrep "^\."'
 
 # connect to vpn
-alias vpn='sudo surfshark-vpn attack'
-alias dis-vpn='sudo surfshark-vpn down'
+alias vpn="sudo surfshark-vpn attack"
+alias dis-vpn="sudo surfshark-vpn down"
